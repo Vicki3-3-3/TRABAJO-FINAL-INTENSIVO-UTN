@@ -31,7 +31,6 @@ body {
     flex-direction: column;
     gap: 100px;
     background-color: var(--primary-bg-color);
-    justify-content: center;
 }
 
 button {
@@ -95,13 +94,17 @@ h4 {
     font-weight: 500;
 }
 
+span {
+    color: var(--secondary-footer-fcolor);
+    font-weight: 300;
+}
+
 /*MAIN SECTION*/
 
 main {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
     gap: 100px;
     padding: 50px;
 }
@@ -207,7 +210,45 @@ main {
     padding: 40px;
 }
 
-/**/
+/*form section*/
+
+.section-form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20%;
+    flex: 1;
+}
+
+.message-form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.div-info {
+    display: flex;
+}
+
+.info-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    flex: 1;
+}
+
+.info-contact-form .bi {
+    background-color: var(--icon-bg-color);
+    color: var(--secondary-font-bg-color);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.section-form button {
+    background-color: var(--secondary-font-bg-color);
+    color: var(--btn-primary-color);
+    padding: 10px 20px;
+}
 
 /*FOOTER SECTION*/
 

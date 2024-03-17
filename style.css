@@ -35,12 +35,18 @@ body {
 
 input {
     font-family: var(--secondary-font);
-    border: var(--secondary-footer-fcolor) 1px solid;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
 }
 
 textarea {
     font-family: var(--secondary-font);
-    border: var(--secondary-footer-fcolor) 1px solid;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
 }
 
 button {
@@ -218,6 +224,38 @@ main {
     gap: 20px;
     border-radius: 20px;
     padding: 40px;
+}
+
+/*portfolio section*/
+
+.portfolios {
+    background-color: #FFFFFF;
+}
+
+/*blog section*/
+
+.blog {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.my-articles {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 40px;
+    width: 80%;
+}
+
+.blog-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
 }
 
 /*form section*/

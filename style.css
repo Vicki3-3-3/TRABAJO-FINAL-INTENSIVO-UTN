@@ -33,6 +33,16 @@ body {
     background-color: var(--primary-bg-color);
 }
 
+input {
+    font-family: var(--secondary-font);
+    border: var(--secondary-footer-fcolor) 1px solid;
+}
+
+textarea {
+    font-family: var(--secondary-font);
+    border: var(--secondary-footer-fcolor) 1px solid;
+}
+
 button {
     background-color: transparent;
     border: 0px;
@@ -224,6 +234,7 @@ main {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    gap: 20px;
 }
 
 .div-info {

@@ -125,7 +125,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 100px;
+    gap: 30vh;
     padding: 50px;
 }
 
@@ -192,6 +192,7 @@ main {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    padding: 5%;
     gap: 2rem;
     background-color: var(--primary-bg-color);
 }
@@ -234,8 +235,12 @@ main {
 /*portfolio section*/
 
 .portfolio {
-    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 5vh;
 }
+
 .header-pf {
     display: flex;
     flex-direction: row;
@@ -247,6 +252,13 @@ main {
     gap: 5%;
 }
 
+.passing-bi .bi {
+    background-color: var(--icon-bg-color);
+    color: var(--secondary-font-bg-color);
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
 
 /*experience section*/
 

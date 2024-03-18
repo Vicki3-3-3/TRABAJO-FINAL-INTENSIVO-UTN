@@ -16,7 +16,7 @@
     --btn-primary-color: #F1F1F1;
     --icon-bg-color: #F5F3FE;
     --primary-bg-color: #FBFBFB;
-    --secondary-footer-fcolor: #656D72;    ;
+    --secondary-footer-fcolor: #656D72;   
 }
 
 html {
@@ -87,7 +87,6 @@ h4 {
 
 span {
     color: var(--secondary-footer-fcolor);
-    font-weight: 300;
 }
 
 p {
@@ -232,6 +231,23 @@ main {
     padding: 40px;
 }
 
+/*portfolio section*/
+
+.portfolio {
+    
+}
+.header-pf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.portfolio-images {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+
 /*experience section*/
 
 .experience {
@@ -240,6 +256,8 @@ main {
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 10%;
+    padding: 9%;
+    width: 100%;
 }
 
 .exp-title-nav {
@@ -259,6 +277,39 @@ main {
         position: relative;
         top: 20px;
 }
+
+.apple-a {
+    background-color: white;
+    color: var(--secondary-font-bg-color);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.bi-chevron-right {
+    font-size: 0.8rem;
+}
+
+.apple-exp ul {
+    color: var(--secondary-footer-fcolor);
+}
+
+.go-a {
+    border: 1px solid var(--btn-primary-color);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+
+.swift-a {
+    border: 1px solid var(--btn-primary-color);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+
+
 /*blog section*/
 
 .blog {

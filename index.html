@@ -10,8 +10,8 @@
 
 <body>
     <header>
-        <img src="./IMAGES/Logo.png" alt="logo de la pagina">
-        <nav>
+        <img src="./IMAGES/Logo.png" alt="logo de la pagina" class="logo">
+        <nav class="header-nav">
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolios</a>
             <a href="#experience">Experience</a>
@@ -73,9 +73,9 @@
         <section class="portfolio" id="portfolio">
             <div class="header-pf">
                 <div>
-                <span><i class="bi bi-dash"></i>MY WORKS</span>
-                <h2>Featured Portfolios</h2>
-            </div>
+                    <span><i class="bi bi-dash"></i>MY WORKS</span>
+                    <h2>Featured Portfolios</h2>
+                </div>
                 <div class="passing-bi">
                     <i class="bi bi-chevron-left"></i>
                     <i class="bi bi-chevron-right"></i>
@@ -155,33 +155,36 @@
             </div>
         </section>
 
-        <section class="clients-testimonials">
+        <section class="my-clients-testimonials">
             <div>
                 <h3><i class="bi bi-dash"></i>MY CLIENTS</h3>
                 <h2>Testimonials</h2>
             </div>
-            <div>
-                <img src="./IMAGES/firstClient.jpeg" alt="woman with her hair up" width="100">
-                <p>We were very pleased to hear how you resolved our website's user interface issues and challenges.
-                </p>
-                <span class="name">Amellia Miller</span>
-                <span>Designer</span>
-            </div>
-            <div>
-                <img src="./IMAGES/secondClient.jpeg" alt="man with a beard" width="100">
-                <p>I’m glad I decided to work with you. The project was delivered on time with all the requirements.
-                </p>
-                <span class="name">James Delaney</span>
-                <span>Developer</span>
-            </div>
-            <div>
-                <img src="./IMAGES/thirdClient.jpeg" alt="woman with short hair" width="100">
-                <p>The management of our projects was always faced with difficulties, but you handled these well.
-                </p>
-                <span class="name">Isabella Bennet</span>
-                <span>Manager</span>
+            <div class="testimonials-div">
+                <div class="testimonial">
+                    <img src="./IMAGES/firstClient.jpeg" alt="woman with her hair up" width="100">
+                    <p>We were very pleased to hear how you resolved our website's user interface issues and challenges.
+                    </p>
+                    <span class="client-name">Amellia Miller</span>
+                    <span>Designer</span>
+                </div>
+                <div class="testimonial">
+                    <img src="./IMAGES/secondClient.jpeg" alt="man with a beard" width="100">
+                    <p>I’m glad I decided to work with you. The project was delivered on time with all the requirements.
+                    </p>
+                    <span class="client-name">James Delaney</span>
+                    <span>Developer</span>
+                </div>
+                <div class="testimonial">
+                    <img src="./IMAGES/thirdClient.jpeg" alt="woman with short hair" width="100">
+                    <p>The management of our projects was always faced with difficulties, but you handled these well.
+                    </p>
+                    <span class="client-name">Isabella Bennet</span>
+                    <span>Manager</span>
+                </div>
             </div>
         </section>
+
         <section class="section-form">
             <form class="message-form">
                 <input type="text" id="name" placeholder="Name">

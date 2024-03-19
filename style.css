@@ -29,7 +29,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 10vh;
     background-color: white;
 }
 
@@ -74,17 +74,18 @@ a:hover {
 
 h1 {
     font-family: var(--primary-font);
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 h2 {
     font-family: var(--primary-font);
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 h3 {
     font-family: var(--primary-font);
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 h4 {
@@ -100,6 +101,7 @@ span {
 p {
     font-size: 0.95rem;
     line-height: 1.5rem;
+    color: var(--secondary-footer-fcolor);
 }
 
 /*header section*/
@@ -134,7 +136,6 @@ main {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 30vh;
-    padding: 50px;
 }
 
 /*hero section*/
@@ -144,6 +145,8 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    position: relative;
+    top: 10vh;
 }
 
 .gral-description {
@@ -173,7 +176,7 @@ main {
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    right: 11%;
+    right: 14%;
     height: 2vh;
 }
 
@@ -182,15 +185,17 @@ main {
     z-index: 2;
     display: flex;
     flex: 1;
-    height: 45vh;
+    height: 36vh;
 }
 
 .img-back {
     position: absolute;
     z-index: 1;
     display: flex;
-    height: 50vh;
+    height: 40vh;
     flex: 1;
+    top: -12px;
+    left: -20px;
 }
 
 /*services section*/
@@ -285,10 +290,12 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 .experience-nav {
     display: flex;
     flex-direction: column;
-    padding: 40%;
+    align-items: flex-start;
+    padding: 20% 10%;
 }
 
 .apple-exp {
@@ -306,6 +313,8 @@ main {
     flex-wrap: nowrap;
     align-items: center;
     width: 100%;
+    padding: 5%;
+    border-radius: 10px;
 }
 
 .bi-chevron-right {
@@ -330,6 +339,9 @@ main {
     border-radius: 10px;
 }
 
+.t-span {
+    font-weight: 500;
+}
 
 /*blog section*/
 
@@ -353,10 +365,22 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     border-radius: 20px;
     border:  1px solid var(--btn-primary-color);
+}
 
+.article-text {
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.continue-reading {
+    position: relative;
+    left: 30%;
 }
 
 /*clients testimonials section*/
@@ -463,11 +487,11 @@ footer {
 
 @media screen and (max-width: 1024px){
     html{
-        font-size: 10px;
+        font-size: 12px;
     };
 
     .logo {
-        width: 1vw;
+        width: 0.7vw;
     }
 
     .header-nav {
@@ -476,5 +500,13 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    html {
+        font-size: 8px;
+    }
 
+    .logo {
+        width: 10vw;
+    }
+
+    
 }

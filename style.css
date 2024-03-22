@@ -31,7 +31,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    gap: 5vh;
     background-color: white;
 }
 
@@ -450,6 +450,13 @@ footer {
 
 /*media queries*/
 
+@media screen and (min-width: 1400px) {
+    html {
+        font-size: 18px;
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
 
     /*general modifications*/
@@ -457,8 +464,6 @@ footer {
         font-size: 12px;
     }
 
-    ;
-    
 
     /*header modifications*/
     .logo {
@@ -472,7 +477,7 @@ footer {
     .portfolio img {
         width: 25vw;
     }
-    
+
     /*hero modifications*/
     .img-front {
         position: absolute;
@@ -492,7 +497,7 @@ footer {
         left: -20px;
     }
 
-    
+
     /*form modifications*/
     .message-form {
         width: 30vw;
@@ -503,12 +508,48 @@ footer {
 
     /*general modifications*/
     html {
-        font-size: 7px;
+        font-size: 12px;
     }
 
     .logo {
         width: 10vw;
     }
+    
+    body {
+        display: flex;
+        gap: 1vh;
+    }
+
+
+    .hero,
+    .services,
+    .portfolio,
+    .experience,
+    .blog,
+    .section-form {
+        display: flex;
+        gap: 4vh;
+    }
+
+    /*hero modifications*/
+    .img-front {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex: 1;
+        height: 26vh;
+    }
+
+    .img-back {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        height: 30vh;
+        flex: 1;
+        top: -12px;
+        left: -20px;
+    }
+
 
     /*services modifications*/
     .favicon-crown {
@@ -534,6 +575,26 @@ footer {
         padding: 30px;
     }
 
+    /*portfolio modifications*/
+
+    .passing-bi .bi {
+        background-color: var(--icon-bg-color);
+        color: var(--secondary-font-bg-color);
+        padding: 9px 14px;
+        border-radius: 20px;
+        font-size: 1rem;
+    }
+
+    /*blog modifications*/
+
+    .my-articles {
+        display: flex;
+        gap: 2%;
+    }
+    
+    .blog-article {
+        padding: 1px;
+    }
     /*form modifications*/
 
     input {
@@ -552,4 +613,89 @@ footer {
     form button {
         font-size: 0.8rem;
     }
+}
+
+@media screen and (max-width:600px) {
+
+    html {
+        font-size: 8px;
+    }
+
+
+    .services-div,
+    .portfolio-images,
+    .experience,
+    .my-articles,
+    .section-form,
+    .hero {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    /*hero modifications*/
+    .img-front {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex: 1;
+        height: 22vh;
+    }
+
+    .img-back {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        height: 26vh;
+        flex: 1;
+        top: -12px;
+        left: -20px;
+    }
+
+    /*services modifications*/
+
+    .favicon-crown {
+        width: 28%;
+        height: 20%;
+    }
+
+
+    /*portfolio modifications*/
+
+    .passing-bi .bi {
+        background-color: var(--icon-bg-color);
+        color: var(--secondary-font-bg-color);
+        padding: 6px 11px;
+        border-radius: 20px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 5.5px;
+    }
+
+    .img-front {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex: 1;
+        height: 18vh;
+    }
+
+    .img-back {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        height: 22vh;
+        flex: 1;
+        top: -12px;
+        left: -20px;
+    }
+
+    .servdiv {
+        padding: 3%;
+    }
+
 }

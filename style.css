@@ -29,9 +29,6 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
     background-color: white;
 }
 
@@ -40,7 +37,7 @@ input {
     border: none;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
+
 }
 
 textarea {
@@ -48,7 +45,6 @@ textarea {
     border: none;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
 }
 
 button {
@@ -190,6 +186,7 @@ main {
 }
 
 .img-front {
+    border-radius: 10px;
     position: absolute;
     z-index: 2;
     display: flex;
@@ -216,10 +213,9 @@ main {
     align-items: center;
     justify-content: center;
     padding: 5%;
-    gap: 2rem;
+    gap: 1vh;
     background-color: var(--primary-bg-color);
-    position: relative;
-    top: 10vh;
+
 }
 
 .services-div {
@@ -259,7 +255,7 @@ main {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    gap: 20vh;
+    gap: 5vh;
     margin: 5%;
 }
 
@@ -358,7 +354,7 @@ main {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    gap: 20vh;
+    gap: 5vh;
     align-items: center;
 }
 
@@ -399,8 +395,8 @@ main {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    gap: 20%;
-    flex: 1;
+    width: 100%;
+    gap: 10%;
     background-color: var(--primary-bg-color);
     padding: 4%;
     border-radius: 20px;
@@ -421,8 +417,7 @@ main {
 .info-contact-form {
     display: flex;
     flex-direction: column;
-    gap: 5vw;
-    flex: 1;
+    gap: 3vw;
 }
 
 .info-contact-form .bi {
@@ -468,16 +463,13 @@ footer {
 
     /*header modifications*/
     .logo {
-        width: 0.7vw;
+        width: 10vw;
     }
 
     .header-nav {
         display: none;
     }
 
-    .portfolio img {
-        width: 25vw;
-    }
 
     /*hero modifications*/
     .img-front {
@@ -498,49 +490,55 @@ footer {
         left: -20px;
     }
 
-
-    /*form modifications*/
-    .message-form {
-        width: 30vw;
-    }
 }
 
 @media screen and (max-width: 800px) {
 
     /*general modifications*/
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .logo {
         width: 10vw;
     }
 
-
-    body {
+    main {
         display: flex;
-        flex-direction: column;
-        gap: 2vh;
-    }
-
-
-    .hero,
-    .services,
-    .portfolio,
-    .experience,
-    .blog,
-    .section-form {
-        display: flex;
-        gap: 4vh;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 30vh;
     }
 
     /*hero modifications*/
+
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+        position: relative;
+        top: 5vh;
+        left: 15vw;
+        margin: 5%;
+    }
+
+    .gral-description {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
     .img-front {
         position: absolute;
         z-index: 2;
         display: flex;
         flex: 1;
         height: 26vh;
+        left: 24%;
     }
 
     .img-back {
@@ -550,14 +548,22 @@ footer {
         height: 30vh;
         flex: 1;
         top: -12px;
-        left: -20px;
+        left: 22%;
     }
 
 
     /*services modifications*/
+
+
+    .services {
+        position: relative;
+        top: 4vh;
+        gap: 4vh;
+    }
+
     .favicon-crown {
-        width: 30%;
-        height: 25%;
+        width: 12%;
+        height: 10%;
     }
 
     .services-div .bi {
@@ -567,6 +573,13 @@ footer {
         border-radius: 5px;
     }
 
+    .services-div {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
 
     .servdiv {
         background-color: white;
@@ -575,7 +588,8 @@ footer {
         align-items: center;
         gap: 10px;
         border-radius: 20px;
-        padding: 30px;
+        padding: 10px;
+        width: 50%;
     }
 
     /*portfolio modifications*/
@@ -585,7 +599,7 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 5%;
-        width: 70%;
+        width: 90%;
     }
 
     .passing-bi .bi {
@@ -602,26 +616,47 @@ footer {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-        gap: 10%;
         padding: 9%;
         width: 100%;
     }
 
+    .experience-nav {
+        display: flex;
+        gap: 4vh;
+        justify-content: flex-start;
+    }
+
+
+    .apple-exp {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+        top: 5px;
+    }
+
     /*blog modifications*/
-    
-.my-articles {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    gap: 40px;
-    width: 50%;
-}
+
+    .my-articles {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 40px;
+        width: 50%;
+    }
 
     .blog-article {
         padding: 1px;
     }
 
     /*form modifications*/
+
+    .section-form {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     input {
         font-size: 0.8rem;
@@ -631,10 +666,6 @@ footer {
         font-size: 0.8rem;
     }
 
-    .message-form {
-        height: 10vh;
-        width: 20vw;
-    }
 
     form button {
         font-size: 0.8rem;
@@ -646,7 +677,7 @@ footer {
 @media screen and (max-width:600px) {
 
     html {
-        font-size: 8px;
+        font-size: 10px;
     }
 
 
@@ -675,10 +706,11 @@ footer {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        gap: 1vh;
+        gap: 3vh;
         justify-content: center;
         position: relative;
-        left: 45%;
+        top: 10vh;
+        left: 30%;
     }
 
     .img-front {
@@ -686,17 +718,14 @@ footer {
         z-index: 2;
         display: flex;
         flex: 1;
-        height: 22vh;
     }
 
     .img-back {
         position: absolute;
         z-index: 1;
         display: flex;
-        height: 26vh;
         flex: 1;
         top: -12px;
-        left: -20px;
     }
 
     /*services modifications*/
@@ -707,13 +736,13 @@ footer {
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: center;
-        gap: 1vh;
-        width: 45%;
+        gap: 2vh;
+        width: 100%;
     }
 
     .favicon-crown {
-        width: 10%;
-        height: 5%;
+        width: 20%;
+        height: 10%;
     }
 
 
@@ -727,13 +756,14 @@ footer {
         border-radius: 20px;
         font-size: 1rem;
     }
+
+    .portfolio img {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 400px) {
 
-    html {
-        font-size: 5.5px;
-    }
 
     /*hero modifications*/
     .img-front {
@@ -748,10 +778,8 @@ footer {
         position: absolute;
         z-index: 1;
         display: flex;
-        height: 22vh;
+        height: 20vh;
         flex: 1;
-        top: -12px;
-        left: -20px;
     }
 
 
